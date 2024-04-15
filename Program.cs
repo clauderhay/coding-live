@@ -38,7 +38,7 @@ class Program
             Console.WriteLine($"Something went wrong: {ex.Message}");
         }*/
 
-        int[] numbers = { 2, 4, 6, 8 };
+        /*int[] numbers = { 2, 4, 6, 8 };
         double average = CalculateAverage(numbers);
         Console.WriteLine("Average is: " + average);
 
@@ -51,6 +51,19 @@ class Program
         catch (ArgumentException ex)
         {
             Console.WriteLine(ex.Message);
+        }*/
+
+        Console.WriteLine("Enger a number: ");
+        string input = Console.ReadLine();
+
+        int result = ConvertStringToInt(input);
+        if(result != int.MinValue)
+        {
+            Console.WriteLine("Converted successfully: " + result);
+        }
+        else
+        {
+            Console.WriteLine("Failed. Enter a valid int");
         }
 
         Console.ReadLine();
@@ -96,6 +109,21 @@ class Program
             sum += num;
         }
         return (double)sum / numbers.Length;
+    }
+
+    // String to Int
+    static int ConvertStringToInt(string input)
+    {
+        try
+        {
+            return int.Parse(input);
+        }
+        catch (FormatException)
+        {
+            Console.WriteLine("Invalid. Enter a valid integer.");
+        }
+
+        return int.MinValue;
     }
 
 
