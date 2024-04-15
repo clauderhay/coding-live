@@ -1,0 +1,15 @@
+/Users/clauderhay/Documents/Portfolio/coding-live/bin/Debug/net7.0/Live Coding
+/Users/clauderhay/Documents/Portfolio/coding-live/bin/Debug/net7.0/Live Coding.deps.json
+/Users/clauderhay/Documents/Portfolio/coding-live/bin/Debug/net7.0/Live Coding.runtimeconfig.json
+/Users/clauderhay/Documents/Portfolio/coding-live/bin/Debug/net7.0/Live Coding.dll
+/Users/clauderhay/Documents/Portfolio/coding-live/bin/Debug/net7.0/Live Coding.pdb
+/Users/clauderhay/Documents/Portfolio/coding-live/obj/Debug/net7.0/Live Coding.csproj.AssemblyReference.cache
+/Users/clauderhay/Documents/Portfolio/coding-live/obj/Debug/net7.0/Live Coding.GeneratedMSBuildEditorConfig.editorconfig
+/Users/clauderhay/Documents/Portfolio/coding-live/obj/Debug/net7.0/Live Coding.AssemblyInfoInputs.cache
+/Users/clauderhay/Documents/Portfolio/coding-live/obj/Debug/net7.0/Live Coding.AssemblyInfo.cs
+/Users/clauderhay/Documents/Portfolio/coding-live/obj/Debug/net7.0/Live Coding.csproj.CoreCompileInputs.cache
+/Users/clauderhay/Documents/Portfolio/coding-live/obj/Debug/net7.0/Live Coding.dll
+/Users/clauderhay/Documents/Portfolio/coding-live/obj/Debug/net7.0/refint/Live Coding.dll
+/Users/clauderhay/Documents/Portfolio/coding-live/obj/Debug/net7.0/Live Coding.pdb
+/Users/clauderhay/Documents/Portfolio/coding-live/obj/Debug/net7.0/Live Coding.genruntimeconfig.cache
+/Users/clauderhay/Documents/Portfolio/coding-live/obj/Debug/net7.0/ref/Live Coding.dll
