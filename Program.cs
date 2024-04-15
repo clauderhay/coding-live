@@ -66,13 +66,23 @@ class Program
             Console.WriteLine("Failed. Enter a valid int");
         }*/
 
-        List<int> numbers = ReadIntegers();
+        /*List<int> numbers = ReadIntegers();
 
         Console.WriteLine("Entered numbers: ");
         foreach (int number in numbers)
         {
             Console.WriteLine(number);
-        }
+        }*/
+
+        Console.WriteLine("Enter numerator: ");
+        int num1 = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Enter denominator: ");
+        int num2 = Convert.ToInt32(Console.ReadLine());
+
+        int result = DivideNumbers(num1, num2);
+        Console.WriteLine("Result of division: " + result);
+
 
         Console.ReadLine();
 
@@ -161,6 +171,16 @@ class Program
         }
 
         return numbers;
+    }
+
+    // Divide two Numbers
+    static int DivideNumbers(int num1, int num2)
+    {
+        if (num2 == 0)
+        {
+            throw new DivideByZeroException();
+        }
+        return num1 / num2;
     }
 
 
