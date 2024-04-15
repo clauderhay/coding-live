@@ -24,7 +24,7 @@ class Program
         */
 
         //VALIDNUM FUNC
-        try
+        /*try
         {
             int number = GetValidNumber();
             Console.WriteLine("The number entered is: " + number);
@@ -36,6 +36,21 @@ class Program
         catch (Exception ex)
         {
             Console.WriteLine($"Something went wrong: {ex.Message}");
+        }*/
+
+        int[] numbers = { 2, 4, 6, 8 };
+        double average = CalculateAverage(numbers);
+        Console.WriteLine("Average is: " + average);
+
+        int[] newArray = new int[0];
+        try
+        {
+            double newArrayAverage = CalculateAverage(newArray);
+            Console.WriteLine("Average of new array: " + newArrayAverage);
+        }
+        catch (ArgumentException ex)
+        {
+            Console.WriteLine(ex.Message);
         }
 
         Console.ReadLine();
@@ -65,6 +80,22 @@ class Program
         }
 
         return num;
+    }
+
+    // Average of array
+    static double CalculateAverage(int[] numbers)
+    {
+        if (numbers.Length == 0)
+        {
+            throw new ArgumentException("Array is empty.");
+        }
+
+        int sum = 0;
+        foreach (int num in numbers)
+        {
+            sum += num;
+        }
+        return (double)sum / numbers.Length;
     }
 
 
