@@ -53,7 +53,7 @@ class Program
             Console.WriteLine(ex.Message);
         }*/
 
-        Console.WriteLine("Enger a number: ");
+        /*Console.WriteLine("Enger a number: ");
         string input = Console.ReadLine();
 
         int result = ConvertStringToInt(input);
@@ -64,6 +64,14 @@ class Program
         else
         {
             Console.WriteLine("Failed. Enter a valid int");
+        }*/
+
+        List<int> numbers = ReadIntegers();
+
+        Console.WriteLine("Entered numbers: ");
+        foreach (int number in numbers)
+        {
+            Console.WriteLine(number);
         }
 
         Console.ReadLine();
@@ -124,6 +132,35 @@ class Program
         }
 
         return int.MinValue;
+    }
+
+    // List of int
+    static List<int> ReadIntegers()
+    {
+        List<int> numbers = new List<int>();
+
+        Console.WriteLine("Enter integers (type 'end' when done): ");
+
+        while (true)
+        {
+            
+            string input = Console.ReadLine();
+
+            if (input.ToLower() == "end")
+                break;
+
+            try
+            {
+                int num = Convert.ToInt32(input);
+                numbers.Add(num);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Error! Invalid input.");
+            }
+        }
+
+        return numbers;
     }
 
 
